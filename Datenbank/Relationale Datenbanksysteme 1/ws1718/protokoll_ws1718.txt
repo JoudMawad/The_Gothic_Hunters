@@ -1,0 +1,75 @@
+Aufgabe 1)
+Multiple Choice 2P/Frage Blockweise alles richitg -> 2P sonst -> 0P
+a) Was zu ACID
+b) Was zu Transaktionen
+c) Reihenfolge von Integration
+d) Grouping von Tabellen
+Weitere
+
+Aufgabe 2)
+EER Diagram erstellen
+Firma mit Filialen, Angestellten (Verkäufer, Verwaltung, Geschäftsführer), Büros (eindeutig pro Filiale), Schichtplan/Schichten.
+Filiale hat Telefon, Addresse, Größe, Telefon, 5-20 Angestellte davon ein Geschäftsführer.
+Jeder Geschäftsführer kann mehrere Filialen führen.
+Angestellte haben Addresse, Geburtsdatum, Konto, Gehalt, Name.
+Geschäftsführer haben ein Einzelbüro.
+Verwaltungsangestellte haben ein Büro und können sich das Teilen.
+Schichten haben Start- und Endzeitpunkt, Aufgabe und einen Angestellten.
+Angestellte können nicht mehr als 36h pro Monat arbeiten.
+Büros sind eindeutig mit Nummer pro Filiale und haben Telefonnummern.
+
+Aufgabe 3) Relationale Algebra
+Datenbank gegeben mit
+_x_ := x Primary Key
+Geschäft(_id_, geschäftsführer, stadt)
+Tier(_name_, _art_, pid -> Produkt, ?)
+Zubehör(_name_, pid-> Produkt, ?)
+Produkt(_id_, preis)
+Einkauf(_id_, gid -> Geschäft, datum, ?)
+In(_eid_ -> Einkauf, _pid_ -> Produkt)
+a) Gibt alle Produkte die in Januar 2015 in Geschäften verkauft wurden, deren Geschäftsführer "X" oder "Y" heißen.
+2-3 weitere
+
+Aufgabe 4) TRC
+gleiches Modell wie 3)
+a) Alle Produkte die ab 01.01.2018 verkauft wurden
+b) Alle Produktnamen die nur in einem Geschäft verkauft wurden.
+c) Alle Produktnamen die höchstens 2 mal verkauft wurden.
+1-2 weitere
+
+Aufgabe 5) SQL Abfragen 20P (5x2P, 2x3P, 1x4P)
+gleiches Modell wie 3)
+a) Alle Produkte die Braunschweig aber nicht in Hannover verkauft wurden
+b) Alle Zubehörnamen die weniger als der Durchschnittkosten
+c) Das teuerste Zubehör mit Namen
+d) ?
+e) Alle Geschäfte die Summe mehr umgesetzt haben als der Durchschnitt
+f) welche Produkte machen mehr als 15% des Umsatzes aus?
+g) wie ist Prozentuale Umsatz von 2015 auf 2016 gestiegen?
+
+Aufgabe 6) Chen-Diagramm in Relationales Model
+
+Aufgabe 7) SQL DDL und Trigger 20P
+Internetshop mit Produkten, Kunden, Gutscheinen, Warenkorb.
+Produkte haben Preis, Name, Beschreibung, Anzahl (muss >= 0 sein), Kategorie (Futter oder Zubehör).
+Warenkorb hat zugehöriger Kunden, Produkte, Gesamtkosten, Lieferaddresse
+Kunden haben Adresse, Vor- und Nachname, Geburtsdatum (müssen älter als 18 sein, CURRENT_DATE gibt aktuelles Datum, Datum1 - Datum2 gibt Differenz in Tagen als Integer)
+Gutscheinen hat eindeutigen Code, Wert
+Zu einem Warenkorb kann ein Gutschein hinzugefügt werden. Dann sol der Wert vom Preis abgezogen werden sowie der Gutschein gelöscht werden.
+Wenn Produkte zu einem Warenkorb hinzugefügt werden, soll der Gesamtpreis aktualisiert werden.
+Erstellen sie passende CREATE TABLE und CREATE TRIGGER statements.
+
+Aufgabe 8) Normalisierung
+Schema R(A, B, C, D, E, F, G)
+F -> C, D
+E -> A, G
+A, B -> C
+C, D -> E
+B -> D?
+a) Bestimmen sie alle Schlüsselkandidaten, erklären sie ihr Vorgehen.
+Lösung {B, F}
+b) Nennen sie 2 Nachteile wenn ein Schema nicht in Normalform ist, geben sie jeweils ein Beispiel.
+c) Wandeln sie R in 3NF um. Erklären sie ihr Vorgehen.
+Lösung: Aus jeder funktionalen Abhängigkeit ein Schema machen:
+R_1(F, C, D), R_2(E, A, g), R_3(A, B, C), R_4(C, D, E), R_5(B, D?)
+Ist nach Konstruktion in 3NF, da es keine Überscheindungen der funktionalen Abhängigkeiten gibt.
