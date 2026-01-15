@@ -1,0 +1,16 @@
+[
+   {
+      "name":"Exercise 1",
+      "tests":[
+         {
+            "test":"src.test.ex02_test.Ex02.test_02_dh",
+            "points":7
+         },
+         {
+            "test":"src.test.ex02_test.Ex02.test_04_rsa",
+            "points":7,
+            "is_master": true
+         }
+      ]
+   }
+]

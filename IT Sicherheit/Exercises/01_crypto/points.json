@@ -1,0 +1,24 @@
+[
+   {
+      "name":"Exercise 1",
+      "tests":[
+         {
+            "test":"src.test.ex01_test.Ex01.test_04_mono",
+            "points":3
+         },
+         {
+            "test":"src.test.ex01_test.Ex01.test_05_breakmono",
+            "points":7
+         },
+         {
+            "test":"src.test.ex01_test.Ex01.test_06_vig",
+            "points":2
+         },
+         {
+            "test":"src.test.ex01_test.Ex01.test_07_breakvig",
+            "points":8,
+            "is_master": true
+         }
+      ]
+   }
+]

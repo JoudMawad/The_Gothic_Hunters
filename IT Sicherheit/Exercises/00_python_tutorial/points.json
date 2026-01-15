@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Exercise 0",
+        "tests": [
+            {
+                "test": "src.test.ex00_test.Ex00.test_00_packages",
+                "points": 1
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_01_static_field",
+                "points": 1
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_02_static_method",
+                "points": 1
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_03_property",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_04_format_strings",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_05_generators",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_06_functionparams",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_07_collatz",
+                "points": 3
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_08_base64",
+                "points": 8,
+                "is_master": true
+            },
+            {
+                "test": "src.test.ex00_test.Ex00.test_09_argparse",
+                "points": 3
+            }
+        ]
+    }
+]

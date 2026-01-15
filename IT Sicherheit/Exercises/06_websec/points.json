@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Exercise 6",
+        "tests": [
+            {
+                "test": "src.test.ex06_test.Ex06.test_01_xss_var0",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex06_test.Ex06.test_01_xss_var1",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex06_test.Ex06.test_01_xss_var2",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex06_test.Ex06.test_01_xss_var3",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex06_test.Ex06.test_01_xss_var4",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex06_test.Ex06.test_02_sqli_bachelor",
+                "points": 2
+            },
+            {
+                "test": "src.test.ex06_test.Ex06.test_02_sqli_master",
+                "points": 4,
+                "is_master": true
+            }
+        ]
+    }
+]

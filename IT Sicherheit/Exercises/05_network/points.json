@@ -1,0 +1,11 @@
+[
+   {
+      "name":"Exercise 5",
+      "tests":[
+         {
+            "test":"src.test.ex05_test.Ex05.test_03_send_packet",
+            "points":8
+         }
+      ]
+   }
+]
